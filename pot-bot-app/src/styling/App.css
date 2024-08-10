@@ -1,0 +1,111 @@
+/* Styles that apply to the whole app should go here, e.g. body, a, div, etc.. */
+/* html{
+  background-color: rgb(4, 20, 6);
+} */
+
+body {
+  margin: 0;
+  padding: 0 32px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.90),
+    rgba(0, 0, 0, 0.350)
+  ), url("./images/pexels-markus-spiske-1268129.jpg");
+  background-size: cover;
+  min-height: 115vh; /* this line har a flaw: if you have several plants and expand every card,
+  the background will at some point move. There must be a way to make it dynamic*/
+  /* background-color: rgba(255, 255, 255, 0.794); */
+}
+
+.header {
+  padding: 24px 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header * {
+  text-decoration: none;
+  margin: 0;
+  color: #eee;
+}
+
+.module {
+  background: linear-gradient(135deg, #ffffff, #f6fff7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 45vw;
+  margin: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 4px 6px 8px #000;
+  -moz-box-shadow: 2px 4px 6px 8px #000;
+  box-shadow: 2px 4px 6px 8px #000;
+}
+
+h3{
+  color: rgb(192, 192, 192);
+}
+
+p {
+  font-size: 0.875rem; /* Change the value to adjust the size */
+  text-align: center; /* Optional: center the text horizontally */
+}
+
+input:focus {
+  outline: none;
+}
+
+a, button[type="button"] {
+  background-color: transparent;
+  border-style: none none none none;
+  margin-top: 10px;
+  font-size: 16px;
+  text-decoration: underline;
+  text-align: center;
+  color: #000;
+}
+
+.all-plants {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.graphs {
+  display: flex;
+  flex-direction: column;
+  max-width: unset;
+}
+
+.graph {
+  width: 60%;
+}
+
+.about {
+  background-color: rgba(32, 41, 31, 0.835);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.about-content > p {
+  text-align: left;
+}
+
+.about-content {
+  margin: 0 64px;
+  text-align: left;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border-style: none none none none;
+  margin: auto;
+  padding: 15px;
+}

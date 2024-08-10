@@ -1,0 +1,56 @@
+.add-plant{
+  padding: 10px;
+  /*background-color: rgba(32, 41, 31, 0.835);*/
+  border-radius: 10px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+/* For small screens */
+@media screen and (max-width: 1180px) {
+  .add-plant {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.plant-form {
+  margin: auto;
+}
+
+h2, p {
+  display: block;
+  text-align: center;
+}
+
+.search-results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.plant-card {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plant-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.plant-card p {
+  text-align: center;
+  margin-top: 0.5rem;
+  color: white;
+}
+
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

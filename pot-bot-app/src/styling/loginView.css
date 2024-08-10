@@ -1,0 +1,153 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  border-radius: 10px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+/* For small screens */
+@media screen and (max-width: 1180px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 0px;
+  color: white;
+}
+
+h2 {
+  display: block;
+  text-align: left;
+}
+
+.h1SignIN {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  /* background-color: #fff;  */
+  /* light grey background color */
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #444; /* set a dark grey label text color */
+}
+
+.login-input, .signup-input, .api-search {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-style: none none solid none;
+  border-bottom: 1px solid #444; /* set a dark grey border color */
+  border-radius: 0px;
+  font-size: 16px;
+}
+/* For small screens */
+@media screen and (max-width: 1180px) {
+  .login-input, .signup-input, .api-search {
+    width: 80%;
+  }
+}
+
+/* For small screens */
+@media screen and (max-width: 1180px) {
+  .login-input, .signup-input, .api-search {
+    width: 80%;
+  }
+}
+
+button[type="submit"] {
+  background-color: #444; /* set a dark grey button background color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 200px; /* add a fixed width of 200px to match the Create an account button */
+}
+
+button[type="submit"]:hover {
+  background-color: #222; /* set a darker shade of grey on hover */
+}
+
+.create-account {
+  /* background-color: #eee;  */
+  /* set a light grey button background color */
+  /* color: #444; */
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 200px; /* add a fixed width of 200px to match the Sign in button */
+}
+
+.create-account:hover {
+  background-color: #ccc; /* set a slightly darker shade of grey on hover */
+}
+
+.create-account a {
+  text-decoration: none;
+}
+
+.create-account-text {
+  color: black;
+}
+
+
+.pLogin {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+
+.error {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  padding: 16px;
+  background-color: #f0d6d6;
+  color: #cb2431;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 1px solid #e6c1c1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-top: 450px;
+}
+
+.errorhidden {
+  display: none;
+}

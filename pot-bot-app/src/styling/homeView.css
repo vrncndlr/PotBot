@@ -1,0 +1,169 @@
+
+
+
+
+.logout-btn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  color: white !important;
+}
+
+.change-username {
+  background-color: transparent;
+  border-style: none none none none;
+  text-decoration: underline;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.expandable-div {
+  position: relative;
+  width: 400px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: rgb(74 95 73 / 68%);
+  transition: all 0.7s ease 100ms;
+}
+
+.expandable-div .plant-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.expanded {
+  width: 500px;
+  height: 350px;
+  transition: all 0.5s ease; /*applies a transition effect: scope, time, transisiton-style*/
+}
+
+.expanded .plant-data {
+  display: flex;
+  opacity: 1;
+  height: 100px;
+  transition: all 0.7s ease 0.2s;
+}
+
+.card-title {
+  display: flex;
+}
+
+.card-title span {
+  text-transform: capitalize;
+}
+
+.card-title > p {
+  align-items: center;
+}
+
+.card-title img {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.expandable-div:not(.expanded) > .plant-data {
+  pointer-events: none;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 2px 6px rgba(30 38 29 / 0.9);
+  /* box-shadow: 4px 2px 6px rgba(143, 143, 143, 0.9); */
+}
+
+#icons__row {
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.5rem;
+  align-items: end;
+  gap: 0;
+}
+
+.icon--small {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 6px;
+  width: 40px;
+  max-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 100ms linear;
+}
+
+.icon--small:hover {
+  transform: scale(1.1);
+}
+
+#trash {
+  position: absolute;
+  right: 0.5em;
+  bottom: 0.5em;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.addPlant {
+  display: flex;
+  justify-content: center;
+}
+
+.addPlant img {
+  margin: 0 auto;
+  width: 80px;
+  padding: 20px 10px;
+}
+
+.plant-container > div {
+  padding: 10px;
+}
+
+
+/* tooltips */
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  transform: translateY(-90%) translateX(-50%);
+  left: 50%;
+  font-size: 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 0.75em 0.50em;
+  border-radius: 0.75em;
+  white-space: nowrap;
+  opacity: 0;
+  transition: all 0s linear 0s;
+}
+
+.tooltip:hover::after {
+  content: attr(alt);
+  opacity: 1;
+  transition: opacity 150ms linear .1s;
+}

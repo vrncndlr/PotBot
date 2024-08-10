@@ -1,0 +1,21 @@
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    border-radius: 10px;
+  }
+
+.settings h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#watering-options, .interval, .checkbox{
+  padding: 4px;
+}
+
+label {
+  font-size: 1.2rem;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SSID and Password Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+      form {
+        width: 80%;
+        margin: 10px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+      }
+      input[type=text], input[type=password] {
+        padding: 10px;
+        margin: 5px;
+        width: 60%;
+        border-radius: 5px;
+        border: 1px solid #cccccc;
+      }
+      input[type=submit] {
+        background-color: #4CAF50;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      input[type=submit]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align:center;">Enter SSID and Password:</h1>
+    <form method="POST" style="text-align:center;">
+      <label for="ssid">SSID:</label>
+      <br>
+      <input type="text" id="ssid" name="ssid">
+      <br>
+      <label for="password">Password:</label>
+      <br>
+      <input type="password" id="password" name="password">
+      <br>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

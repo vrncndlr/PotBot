@@ -1,0 +1,21 @@
+.modal {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+  background-color: rgba(45, 45, 45, 0.9);
+  color: #eee;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 2px 4px 6px #222222;
+  transition: all 0.2s linear;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 99;
+}
+
+.modal--active {
+  top: 35%;
+  opacity: 1;
+  pointer-events: unset;
+}
